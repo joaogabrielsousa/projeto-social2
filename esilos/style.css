@@ -1,8 +1,23 @@
 *{
     background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px;
+    margin: 0px;
 }
-div{
+header{
+    background-color: rgba(0, 0, 46, 0);
+    height: 100px;
+    text-align: center;
+    font-size: 1.4em;
     
+}
+header>p {
+    background-color: rgb(0, 0, 63);
+    padding: 40px;
+    height: 10px;
+}
+div{ 
     width: 90vw;
     height: 90vh;
 }
