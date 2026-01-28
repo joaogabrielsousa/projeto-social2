@@ -1,3 +1,7 @@
+/* 
+cores
+verde,azul,branco,preto
+*/
 *{
     background-color: black;
     color: white;
@@ -5,25 +9,8 @@
     padding: 0px;
     margin: 0px;
 }
-header{
-    background-color: rgba(0, 0, 46, 0);
-    height: 100px;
-    text-align: center;
-    font-size: 1.4em;
-    
-}
-header>p {
-    background-color: rgb(0, 0, 63);
-    padding: 40px;
-    height: 10px;
-}
-div{ 
-    width: 90vw;
-    height: 90vh;
-}
-
-img{
-    border-radius: 50%;
-    height: 200px;
-    padding: 200px;
+button#button {
+    background-color: rgba(255, 255, 255, 0);
+    width: 100vw;
+    height: 100vh;
 }
