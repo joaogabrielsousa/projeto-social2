@@ -1,0 +1,29 @@
+/*
+
+*/
+@charset "utf-8";
+
+*{
+    background-color: black;
+    color: wheat;
+    margin: 0;
+}
+@keyframes fadeIn{
+    0%{
+        color: black;
+    }
+    100%{
+        color: green;
+    }
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+h2{
+   color: green; 
+   animation: fadeIn 5s;
+}

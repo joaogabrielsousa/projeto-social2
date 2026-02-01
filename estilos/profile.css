@@ -1,0 +1,119 @@
+@charset "utf-8";
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+/* Centraliza o card na tela */
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Card */
+#background {
+    background-color: rgba(57, 71, 255, 0.192);
+    border-radius: 10px;
+    height: 78vh;
+    width: 60vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Containers internos */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Espaçamento entre foto e ícones */
+#background > .container:first-of-type {
+    margin-bottom: 30px;
+}
+
+
+/* Foto de perfil */
+#ftPerfil {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    
+}
+/* Ícones */
+
+a{
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    
+}
+#ftTtk{
+    width: 50px;
+    height: 50px;
+    outline: 3.9px solid black;
+    border-radius: 50%;
+    background-color: gray;
+    padding: 4px;
+}
+
+#ftGithub{
+    border: 3.9px solid black;
+    border-radius: 50%;
+}
+/*animações*/
+.box {
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.fade-in {
+    animation: fadeIn 1.5s ease forwards;
+}
+.icon-btn:hover img {
+    transform: scale(1.15);
+}
+
+.icon-btn:hover .textAnimation {
+    color: rgb(0, 255, 0);
+}
+.icon-btn:focus-visible {
+    outline: 2px solid rgb(0, 255, 0);
+    outline-offset: 4px;
+}
+
+.icon-btn {
+    transition: transform 0.3s ease;
+    padding: 10px;
+    cursor: pointer;
+    /*deixa a transição suave*/
+}
+.textAnimation:hover{
+
+}
+/*Keygrames*/
+@keyframes fadeIn {
+    0%{
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
